@@ -1,0 +1,1094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>/Users/ApigeeCorporation/Documents/tools/git/L.L.Bean/LLBean/apiproxies/weather-api/.readme.md.html</title>
+
+
+<style type="text/css">
+body {
+	color: #333;
+	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
+}
+
+.markdown-body {
+    border: 1px solid #CACACA;
+    padding: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    word-wrap: break-word;
+}
+.markdown-body > *:first-child {
+    margin-top: 0 !important;
+}
+.markdown-body > *:last-child {
+    margin-bottom: 0 !important;
+}
+.markdown-body a.absent {
+    color: #C00;
+}
+.markdown-body a.anchor {
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    left: 0;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-right: 6px;
+    position: absolute;
+    top: 0;
+}
+.markdown-body a.anchor:focus {
+    outline: medium none;
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+    cursor: text;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 1em 0 15px;
+    padding: 0;
+    position: relative;
+}
+
+.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+    color: #000;
+    display: none;
+}
+.markdown-body h1:hover a.anchor, .markdown-body h2:hover a.anchor, .markdown-body h3:hover a.anchor, .markdown-body h4:hover a.anchor, .markdown-body h5:hover a.anchor, .markdown-body h6:hover a.anchor {
+    line-height: 1;
+    margin-left: -22px;
+    padding-left: 0;
+    text-decoration: none;
+    top: 15%;
+}
+.markdown-body h1:hover a.anchor .octicon-link, .markdown-body h2:hover a.anchor .octicon-link, .markdown-body h3:hover a.anchor .octicon-link, .markdown-body h4:hover a.anchor .octicon-link, .markdown-body h5:hover a.anchor .octicon-link, .markdown-body h6:hover a.anchor .octicon-link {
+    display: inline-block;
+}
+.markdown-body h1 tt, .markdown-body h1 code, .markdown-body h2 tt, .markdown-body h2 code, .markdown-body h3 tt, .markdown-body h3 code, .markdown-body h4 tt, .markdown-body h4 code, .markdown-body h5 tt, .markdown-body h5 code, .markdown-body h6 tt, .markdown-body h6 code {
+    font-size: inherit;
+}
+.markdown-body h1 {
+    border-bottom: 1px solid #DDD;
+    font-size: 2.5em;
+}
+.markdown-body h2 {
+    border-bottom: 1px solid #EEE;
+    font-size: 2em;
+}
+.markdown-body h3 {
+    font-size: 1.5em;
+}
+.markdown-body h4 {
+    font-size: 1.2em;
+}
+.markdown-body h5 {
+    font-size: 1em;
+}
+.markdown-body h6 {
+    color: #777;
+    font-size: 1em;
+}
+.markdown-body p, .markdown-body blockquote, .markdown-body ul, .markdown-body ol, .markdown-body dl, .markdown-body table, .markdown-body pre {
+    margin: 15px 0;
+}
+.markdown-body ul, .markdown-body ol {
+    padding-left: 30px;
+}
+.markdown-body ul.no-list, .markdown-body ol.no-list {
+    list-style-type: none;
+    padding: 0;
+}
+.markdown-body ul ul, .markdown-body ul ol, .markdown-body ol ol, .markdown-body ol ul {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.markdown-body dl {
+    padding: 0;
+}
+.markdown-body dl dt {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 0;
+}
+.markdown-body dl dd {
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+.markdown-body blockquote {
+    border-left: 4px solid #DDD;
+    color: #777;
+    padding: 0 15px;
+}
+.markdown-body blockquote > *:first-child {
+    margin-top: 0;
+}
+.markdown-body blockquote > *:last-child {
+    margin-bottom: 0;
+}
+.markdown-body table {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+.markdown-body table th {
+    font-weight: bold;
+}
+.markdown-body table th, .markdown-body table td {
+    border: 1px solid #DDD;
+    padding: 6px 13px;
+}
+.markdown-body table tr {
+    background-color: #FFF;
+    border-top: 1px solid #CCC;
+}
+.markdown-body table tr:nth-child(2n) {
+    background-color: #F8F8F8;
+}
+.markdown-body img {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 100%;
+    border: 0px;
+}
+.markdown-body span.frame {
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.frame > span {
+    border: 1px solid #DDD;
+    display: block;
+    float: left;
+    margin: 13px 0 0;
+    overflow: hidden;
+    padding: 7px;
+    width: auto;
+}
+.markdown-body span.frame span img {
+    display: block;
+    float: left;
+}
+.markdown-body span.frame span span {
+    clear: both;
+    color: #333;
+    display: block;
+    padding: 5px 0 0;
+}
+.markdown-body span.align-center {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.align-center > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+.markdown-body span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+.markdown-body span.align-right {
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+.markdown-body span.align-right > span {
+    display: block;
+    margin: 13px 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+.markdown-body span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+.markdown-body span.float-left {
+    display: block;
+    float: left;
+    margin-right: 13px;
+    overflow: hidden;
+}
+.markdown-body span.float-left span {
+    margin: 13px 0 0;
+}
+.markdown-body span.float-right {
+    display: block;
+    float: right;
+    margin-left: 13px;
+    overflow: hidden;
+}
+.markdown-body span.float-right > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: right;
+}
+.markdown-body code, .markdown-body tt {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    margin: 0 2px;
+    padding: 0 5px;
+}
+.markdown-body code {
+    white-space: nowrap;
+}
+.markdown-body pre > code {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+}
+.markdown-body .highlight pre, .markdown-body pre {
+    background-color: #F8F8F8;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+}
+.markdown-body pre code, .markdown-body pre tt {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    word-wrap: normal;
+}
+
+pre, code, tt {
+    font-family: Consolas,"Liberation Mono",Courier,monospace;
+    font-size: 12px;
+}
+
+.highlight {
+    background: #FFF;
+}
+.highlight .k,
+.highlight .o,
+.highlight .cp,
+.highlight .cs,
+.highlight .gs,
+.highlight .gu,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt,
+.highlight .nc,
+.highlight .ne,
+.highlight .nf,
+.highlight .ow {
+    font-weight: bold;
+}
+.highlight .gd,
+.highlight .gd .x,
+.highlight .gi,
+.highlight .gi .x,
+.type-csharp .highlight .nf,
+.type-csharp .highlight .nn {
+    color: #000;
+}
+.highlight .c,
+.highlight .cm,
+.highlight .c1 {
+    color: #998;
+    font-style: italic;
+}
+.highlight .err {
+    background-color: #E3D2D2;
+    color: #A61717;
+}
+.highlight .cp,
+.highlight .cs {
+    color: #999;
+}
+.highlight .cs,
+.highlight .ge {
+    font-style: italic;
+}
+.highlight .gd {
+    background-color: #FDD;
+}
+.highlight .gd .x {
+    background-color: #FAA;
+}
+.highlight .gr,
+.highlight .gt {
+    color: #A00;
+}
+.highlight .gh {
+    color: #999;
+}
+.highlight .gi {
+    background-color: #DFD;
+}
+.highlight .gi .x {
+    background-color: #AFA;
+}
+.highlight .go {
+    color: #888;
+}
+.highlight .gp,
+.highlight .nn {
+    color: #555;
+}
+.highlight .gu,
+.highlight .ni {
+    color: #800080;
+}
+.highlight .kt {
+    color: #458;
+}
+.highlight .m {
+    color: #099;
+}
+.highlight .s {
+    color: #D14;
+}
+.highlight .n {
+    color: #333;
+}
+.highlight .na,
+.highlight .no,
+.highlight .nv,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
+    color: #008080;
+}
+.highlight .nb {
+    color: #0086B3;
+}
+.highlight .nc {
+    color: #458;
+}
+.highlight .ne,
+.highlight .nf {
+    color: #900;
+}
+.highlight .nt {
+    color: #000080;
+}
+.highlight .w {
+    color: #BBB;
+}
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
+    color: #099;
+}
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .s1 {
+    color: #D14;
+}
+.highlight .sr {
+    color: #009926;
+}
+.highlight .ss {
+    color: #990073;
+}
+.highlight .bp {
+    color: #999;
+}
+.highlight .il {
+    color: #099;
+}
+.highlight .gc {
+    background-color: #EAF2F5;
+    color: #999;
+}
+.type-csharp .highlight .k,
+.type-csharp .highlight .kt {
+    color: #00F;
+}
+.type-csharp .highlight .nf {
+    font-weight: normal;
+}
+.type-csharp .highlight .nc {
+    color: #2B91AF;
+}
+.type-csharp .highlight .s,
+.type-csharp .highlight .sc {
+    color: #A31515;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+function getDocumentScrollTop() 
+{
+   var res = document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset || 0;
+   // alert(res);
+   return res;
+}
+
+function setDocumentScrollTop(ypos) 
+{
+	window.scrollTo(0, ypos);
+}
+
+</script>
+
+
+</head>
+<body class="markdown-body">
+<h1> <a name="apiname-api" class="anchor" href="..md.html#apiname-api"><span class="octicon octicon-link"></span></a>APIName API</h1> 
+<p><a name="Summary"></a></p> 
+<h1> <a name="summary" class="anchor" href="..md.html#summary"><span class="octicon octicon-link"></span></a>Summary</h1> 
+<p>The L.L.Bean APIName API allows developers to ____________. Given an APIName ID, the APIName response will provide ____.</p> 
+<p>Paste a simple response example below...(this example is from Department API)</p> 
+<div class="highlight highlight-javascript">
+ <pre>    <span class="p">{</span>
+        <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="mi">27</span><span class="p">,</span>
+        <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Women&amp;#039;s&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;count&quot;</span><span class="o">:</span> <span class="mi">1070</span><span class="p">,</span>
+        <span class="s2">&quot;level&quot;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;dept&quot;</span> <span class="o">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="mi">607</span><span class="p">,</span>
+                <span class="s2">&quot;level&quot;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Shirts&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;count&quot;</span><span class="o">:</span> <span class="mi">130</span><span class="p">,</span>
+                <span class="s2">&quot;dept&quot;</span><span class="o">:</span> <span class="p">[</span>
+                   <span class="p">{</span>
+                       <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="mi">504209</span><span class="p">,</span>
+                       <span class="s2">&quot;level&quot;</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+                       <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Tees &amp; Knit Tops&quot;</span><span class="p">,</span>
+                       <span class="s2">&quot;count&quot;</span><span class="o">:</span> <span class="mi">66</span>
+                   <span class="p">},</span>
+                   <span class="p">{</span>
+                       <span class="s2">&quot;id&quot;</span><span class="o">:</span> <span class="mi">502972</span><span class="p">,</span>
+                       <span class="s2">&quot;level&quot;</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+                       <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;Button-Front&quot;</span><span class="p">,</span>
+                       <span class="s2">&quot;count&quot;</span><span class="o">:</span> <span class="mi">31</span>
+                   <span class="p">}</span>
+               <span class="p">]</span>
+           <span class="p">}</span>
+       <span class="p">]</span>
+    <span class="p">}</span>
+</pre>
+</div> 
+<p>The APIName API is what you will want to use when you need to provide a way for your users to ______.</p> 
+<p><a name="Example"></a></p> 
+<h2> <a name="example" class="anchor" href="..md.html#example"><span class="octicon octicon-link"></span></a>Example</h2> 
+<p>The following example will illustrate how to obtain APIName using curl commands. The purpose of this example is to provide working code for accomplishing the requirements of your app.</p> 
+<p>This guide presents a step by step process to help you gain immediate access to the APIName API so you may look around right away. Please do take copious notes of these commands as it's best to have a firm understanding of the most basic requests.</p> 
+<p>The following example makes a fictitious request using the consumer app key.</p> 
+<pre><code>curl  https://api.llbean.com/v1/APIName/27 /
+ -H &quot;key: YWFiYmNjZGRlZTEyMzQ1OjIyMjMzNDQ1NQ
+</code></pre> 
+<blockquote> 
+ <p>But I'm getting a &quot;HTTP/1.1 401 API is secure. Needs security Credentials&quot; error!</p> 
+</blockquote> 
+<p>If you've already asked yourself this question, or have seen one of these errors; you may have moved too fast. Please review the developer channel Getting Started Guide <a href="http://developer.llbean.com/get-started">here</a>.</p> 
+<p>If you have difficulties with any of these please email the API management team <a href="mailto:api@llbean.com">api@llbean.com</a> or start a conversation in the <a href="http://developer.llbean.com/forum">forum</a>. </p> 
+<p>The following example provides the most basic APIName API response payload.</p> 
+<p>paste an example below. This example is from the Departments API.</p> 
+<div class="highlight highlight-JSON">
+ <pre>    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Women&amp;#039;s&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">1070</span><span class="p">,</span>
+        <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;dept&quot;</span> <span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">607</span><span class="p">,</span>
+                <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Shirts&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">130</span><span class="p">,</span>
+                <span class="nt">&quot;dept&quot;</span><span class="p">:</span> <span class="p">[</span>
+                   <span class="p">{</span>
+                       <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">504209</span><span class="p">,</span>
+                       <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                       <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Tees &amp; Knit Tops&quot;</span><span class="p">,</span>
+                       <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">66</span>
+                   <span class="p">},</span>
+                   <span class="p">{</span>
+                       <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="mi">502972</span><span class="p">,</span>
+                       <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                       <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Button-Front&quot;</span><span class="p">,</span>
+                       <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">31</span>
+                   <span class="p">}</span>
+               <span class="p">]</span>
+           <span class="p">}</span>
+       <span class="p">]</span>
+    <span class="p">}</span>
+</pre>
+</div> 
+<h3> <a name="congratulations-youre-done" class="anchor" href="..md.html#congratulations-youre-done"><span class="octicon octicon-link"></span></a>Congratulations! You're Done!</h3> 
+<blockquote> 
+ <p>Are you serious? Is that all? Okay, you must be kidding me?</p> 
+</blockquote> 
+<p>There's a lot more. However, before digging in much deeper it is important to note that the L.L.Bean APIName represents a very complex data model. With this understanding, and to aid in the usability of the API, our team focuses on the minimum viable product you, the developer, may require to build your fantastic app.</p> 
+<p><a name="entity-expansion"></a></p> 
+<h2> <a name="entity-expansion" class="anchor" href="..md.html#entity-expansion"><span class="octicon octicon-link"></span></a>Entity Expansion</h2> 
+<p>Many of the L.L.Bean APIs support what we like to call entity expansion or &quot;expands parameters&quot;. These querystring parameters allow the app developer to choose what portions of the entity are appropriate for the use case. </p> 
+<p>In addition, these options allow our API product owners to decide which entities make sense to allow developers to access.</p> 
+<p>The following are the expansion parameters that are supported in the APIName API.</p> 
+<p>The Department API is used as an example but paste the APIName specific info below.</p> 
+<p><a name="entity-expansion-items"></a></p> 
+<h3> <a name="product" class="anchor" href="..md.html#product"><span class="octicon octicon-link"></span></a>Product</h3> 
+<blockquote> 
+ <p>The product entity represents product within the specified APIName. Example from APIName API. Paste the APIName specific information below.</p> 
+</blockquote> 
+<pre><code>curl  https://api.llbean.com/v1/departments/607?expand=products \
+-H &quot;key: I6kFwQqUvAU6JKCM6rpFrCdfd6OnOAZV&quot;
+</code></pre> 
+<pre><code>{
+  &quot;id&quot;: 27,
+  &quot;name&quot;: &quot;Women's&quot;,
+  &quot;count&quot;: 1053,
+  &quot;level&quot;: 0,
+  &quot;dept&quot;:  [
+     {
+      &quot;id&quot;: 607,
+      &quot;name&quot;: &quot;Shirts&quot;,
+      &quot;count&quot;: 133,
+      &quot;level&quot;: 1,
+      &quot;dept&quot;:  [
+         {
+          &quot;id&quot;: 504209,
+          &quot;name&quot;: &quot;Tees &amp; Knit Tops&quot;,
+          &quot;count&quot;: 67,
+          &quot;level&quot;: 2,
+          &quot;dept&quot;:  []
+        },
+         {
+          &quot;id&quot;: 502972,
+          &quot;name&quot;: &quot;Button-Front&quot;,
+          &quot;count&quot;: 33,
+          &quot;level&quot;: 2,
+          &quot;dept&quot;:  []
+        },
+         {
+          &quot;id&quot;: 502974,
+          &quot;name&quot;: &quot;Turtlenecks&quot;,
+          &quot;count&quot;: 9,
+          &quot;level&quot;: 2,
+          &quot;dept&quot;:  []
+        },
+         {
+          &quot;id&quot;: 502969,
+          &quot;name&quot;: &quot;Polos&quot;,
+          &quot;count&quot;: 2,
+          &quot;level&quot;: 2,
+          &quot;dept&quot;:  []
+        },
+         {
+          &quot;id&quot;: 502975,
+          &quot;name&quot;: &quot;Active&quot;,
+          &quot;count&quot;: 33,
+          &quot;level&quot;: 2,
+          &quot;dept&quot;:  []
+        }
+      ]
+    }
+  ],
+  &quot;products&quot;:  [
+     {
+      &quot;id&quot;: &quot;32709&quot;,
+      &quot;name&quot;: &quot;Pima Cotton Tee, Short-Sleeve Crewneck&quot;
+    },
+     {
+      &quot;id&quot;: &quot;31482&quot;,
+      &quot;name&quot;: &quot;Pima Cotton Tee, Sleeveless Shell&quot;
+    },
+     {
+      &quot;id&quot;: &quot;74846&quot;,
+      &quot;name&quot;: &quot;Pima Cotton Scoopneck, Elbow-Sleeve&quot;
+    }
+  ]
+</code></pre> 
+<p>There are several templates that could be used for the Security section. Below are a couple of examples to start from...</p> 
+<p><a name="security"></a></p> 
+<h2> <a name="security" class="anchor" href="..md.html#security"><span class="octicon octicon-link"></span></a>Security</h2> 
+<p>First and foremost is security. On our API Platform the consumer app is a trusted system that interacts with L.L.Bean digital assets via an API. The L.L.Bean APIName API is protected with Fiil in as appropriate factors:</p> 
+<h3> <a name="1-consumer-key-validation" class="anchor" href="..md.html#1-consumer-key-validation"><span class="octicon octicon-link"></span></a>1. Consumer Key Validation</h3> 
+<p>It is important to protect L.L.Bean APIs from unauthorized access. One of the primary ways we do this is by validating your API consumer application key.</p> 
+<p>All developer apps must be approved by an L.L.Bean API administrator and will be provided a consumer key and secret. It is of utmost importance that you, the app developer, treat these credentials with special care.</p> 
+<p>When making requests to L.L.Bean APIName API you will be required to provide your Consumer key. </p> 
+<blockquote> 
+ <p>Your consumer app key is unique for your app and should be kept in a secure location.</p> 
+</blockquote> 
+<ul> 
+ <li>Do NOT store consumer keys in your source management system.</li> 
+ <li>Do NOT reference your key in your application documents.</li> 
+ <li>Do NOT allow your key to be exposed in .bash_history files.</li> 
+ <li>Do NOT post your key on the developers forum or when sending emails into the API Team.</li> 
+ <li>Do NOT hard code your key inside of your app code.</li> 
+</ul>
+<blockquote> 
+ <p>Because we care, periodically the L.L. Bean API team will require credentials be regenerated. In the event this needs to occur the email address associated with your app will be notified.</p> 
+</blockquote> 
+<p>To find the authorization credentials for an existing app, follow these steps:</p> 
+<ol> 
+ <li>Go to the Developer Channel <a href="http://developer.llbean.com">http://developer.llbean.com</a> </li> 
+ <li>In the top right, hover over your email address and click my apps.</li> 
+ <li>Select an application to view its authorization credentials. </li> 
+ <li>Make your API request passing your consumer key</li> 
+</ol>
+<h3> <a name="2-transport-layer-security-tls" class="anchor" href="..md.html#2-transport-layer-security-tls"><span class="octicon octicon-link"></span></a>2. Transport Layer Security (TLS):</h3> 
+<p>All API service endpoints are encrypted using SSL. Strict use of HTTPS avoids intercepting the API calls and authorization headers between your app and the L.L.Bean API platform.</p> 
+<p>Another option for security .......</p> 
+<h3> <a name="application-layer-validation" class="anchor" href="..md.html#application-layer-validation"><span class="octicon octicon-link"></span></a>Application Layer Validation</h3> 
+<p>All developer apps must be approved by an L.L.Bean API administrator and provided a consumer key and secret. It is of utmost importance that you, the app developer, treat these credentials with special care.</p> 
+<h3> <a name="oauth-v2-client-credentials-grant" class="anchor" href="..md.html#oauth-v2-client-credentials-grant"><span class="octicon octicon-link"></span></a>OAuth V2 Client Credentials grant</h3> 
+<p>All developer apps wishing to interact with the Purchases API will be required to exchange the consumer key and secret for an access token which, when presented to the Purchases API endpoints, can retrieve Purchase-history-related data for any customer.</p> 
+<h3> <a name="customer-data-verification" class="anchor" href="..md.html#customer-data-verification"><span class="octicon octicon-link"></span></a>Customer data verification</h3> 
+<p>All developer apps built by external organizations or third parties will be required to provide additional customer information to verify appropriate access. This may include the customer's last name, postal code, the store where the item was purchased, or the date.</p> 
+<h3> <a name="transport-layer-security-tls" class="anchor" href="..md.html#transport-layer-security-tls"><span class="octicon octicon-link"></span></a>Transport Layer Security (TLS):</h3> 
+<p>All API service endpoints are encrypted using SSL. Strict use of HTTPS avoids intercepting the API calls and authorization headers between your app and the L.L.Bean API platform.</p> 
+<p>End of suggestion for another option ....</p> 
+<p><a name="Response%20Codes"></a></p> 
+<h2> <a name="response-codes" class="anchor" href="..md.html#response-codes"><span class="octicon octicon-link"></span></a>Response Codes</h2> 
+<p>Response codes are used to indicate when something has gone right or wrong with our API or your app. Here are some additional examples of errors you may run into when developing your app. The following are pseudocode so please don't attempt to copy and paste.</p> 
+<h3> <a name="200-ok" class="anchor" href="..md.html#200-ok"><span class="octicon octicon-link"></span></a>200 OK</h3> 
+<p>Request:</p> 
+<blockquote> 
+ <p>GET <a href="https://api.llbean.com/v1/departments/27">https://api.llbean.com/v1/departments/27</a> </p> 
+</blockquote> 
+<p>Response:</p> 
+<blockquote> 
+ <p>HTTP/1.1 200 OK</p> 
+</blockquote> 
+<div class="highlight highlight-JSON">
+ <pre>   <span class="p">{</span><span class="nt">&quot;beautiful&quot;</span><span class="p">:</span><span class="s2">&quot;payload&quot;</span><span class="p">}</span>
+</pre>
+</div> 
+<p>This is a beautiful thing! And most likely everything went off without a hitch! We try hard to ensure that all 200 response codes mean your app is okay to go about its business.</p> 
+<h3> <a name="500-server-error---" class="anchor" href="..md.html#500-server-error---"><span class="octicon octicon-link"></span></a>500 Server Error <a name="department-api-500-error"></a> </h3> 
+<p>Request:</p> 
+<blockquote> 
+ <p>GET <a href="https://dev.api.llbean.com/v1/departments/60?expand=products">https://dev.api.llbean.com/v1/departments/60?expand=products</a></p> 
+</blockquote> 
+<p>Response:</p> 
+<blockquote> 
+ <p>HTTP/1.1 500 Internal Server Error</p> 
+</blockquote> 
+<div class="highlight highlight-JSON">
+ <pre><span class="p">{</span>
+  <span class="nt">&quot;fault&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;faultstring&quot;</span><span class="p">:</span> <span class="s2">&quot;Page Not Available&lt;br&gt;&lt;b&gt;We're sorry, the page you requested is not available.&lt;/b&gt;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;detail&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;errorcode&quot;</span><span class="p">:</span> <span class="s2">&quot;500&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre>
+</div> 
+<p><a name="traffic-management"></a></p> 
+<h2> <a name="traffic-management" class="anchor" href="..md.html#traffic-management"><span class="octicon octicon-link"></span></a>Traffic Management</h2> 
+<p>The APIName API uses a combination of low and high-traffic management policies to protect your app, and L.L.Bean's back, from excessive load. All API requests are subject to a default policy; however, as a customization, each individual developer app can have a value set by an API management team member.</p> 
+<p><a name="spike-arrests"></a></p> 
+<h2> <a name="spike-arrests" class="anchor" href="..md.html#spike-arrests"><span class="octicon octicon-link"></span></a>Spike Arrests</h2> 
+<p>SpikeArrests stop traffic spikes (or bursts) that can be caused by an increase in usage, buggy clients, or malicious attacks.</p> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Policy</th> 
+   <th align="left">Number of requests (default)</th> 
+   <th align="left">Units</th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">High Use</td> 
+   <td align="left">15</td> 
+   <td align="left">Per second</td> 
+  </tr> 
+  <tr> 
+   <td align="left">Low USe</td> 
+   <td align="left">3</td> 
+   <td align="left">Per second</td> 
+  </tr> 
+ </tbody> 
+</table>
+<p><a name="quota-management"></a></p> 
+<h2> <a name="quota-management" class="anchor" href="..md.html#quota-management"><span class="octicon octicon-link"></span></a>Quota Management</h2> 
+<p>A Quota is an allotment of request messages that an app is allowed to submit to an API over the course of an hour, a day, a week, or a month.</p> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Policy</th> 
+   <th align="left">Number of requests (default)</th> 
+   <th align="left">Units</th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">High Use</td> 
+   <td align="left">54,000</td> 
+   <td align="left">Per hour or per Developer App</td> 
+  </tr> 
+  <tr> 
+   <td align="left">Low USe</td> 
+   <td align="left">10.800</td> 
+   <td align="left">Per hour or per Developer App</td> 
+  </tr> 
+ </tbody> 
+</table>
+<blockquote> 
+ <p>okay now I'm ready for the really gory details. Let's see all those specs again in a detailed tabular format.</p> 
+</blockquote> 
+<p>The following information has been designed to provide a detailed REST API specification for the APIName API.</p> 
+<p><a name="API%20Resource"></a></p> 
+<h2> <a name="api-resource-apiname-api-resources-and-uris" class="anchor" href="..md.html#api-resource-apiname-api-resources-and-uris"><span class="octicon octicon-link"></span></a>API Resource: APIName API Resources and URIs</h2> 
+<h2> <a name="apiname-resources" class="anchor" href="..md.html#apiname-resources"><span class="octicon octicon-link"></span></a>APIName Resources</h2> 
+<p><a name="Description"></a></p> 
+<h3> <a name="description-of-apiname" class="anchor" href="..md.html#description-of-apiname"><span class="octicon octicon-link"></span></a>Description of APIName</h3> 
+<p>The L.L.Bean APIName allows developers to xxxxxxxx.</p> 
+<p>Given a xxxxxx, APIName will provide xxxxxxxx.</p> 
+<p><a name="Resource%20Security"></a></p> 
+<h3> <a name="security-specific-to-apiname" class="anchor" href="..md.html#security-specific-to-apiname"><span class="octicon octicon-link"></span></a>Security specific to APIName</h3> 
+<p>xxxxxxxxx</p> 
+<p><a name="Resource%20Error%20codes"></a></p> 
+<h3> <a name="response-codes-specific-to-apiname-resource" class="anchor" href="..md.html#response-codes-specific-to-apiname-resource"><span class="octicon octicon-link"></span></a>Response Codes specific to APIName Resource</h3> 
+<ul> 
+ <li>See Global definition</li> 
+</ul>
+<p><a name="Request"></a></p> 
+<h3> <a name="request-for-apiname" class="anchor" href="..md.html#request-for-apiname"><span class="octicon octicon-link"></span></a>Request for APIName</h3> 
+<p><a name="URI%20Template"></a></p> 
+<h4> <a name="uri-template" class="anchor" href="..md.html#uri-template"><span class="octicon octicon-link"></span></a>URI (Template)</h4> 
+<pre><code>/v1/xxxxxxx
+</code></pre> 
+<p><a name="Request%20Parameters"></a></p> 
+<h3> <a name="request-parameters-for-apiname" class="anchor" href="..md.html#request-parameters-for-apiname"><span class="octicon octicon-link"></span></a>Request Parameters for APIName</h3> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Parameter Name</th> 
+   <th align="left">Description</th> 
+   <th align="left">Example Values</th> 
+   <th align="left">Usage</th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">xxxxxxx</td> 
+   <td align="left">xxxxxxxxxxxxxxxxxxxxx</td> 
+   <td align="left">999999999</td> 
+   <td align="left">xxxxxxx</td> 
+  </tr> 
+  <tr> 
+   <td align="left">xxxxxxxxxx</td> 
+   <td align="left">xxxxxxxxxxxxxxxxxxxxxxxxxx</td> 
+   <td align="left">99999999999</td> 
+   <td align="left">xxxxxxx</td> 
+  </tr> 
+ </tbody> 
+</table>
+<p><a name="Example%20Request"></a></p> 
+<h3> <a name="example-requests" class="anchor" href="..md.html#example-requests"><span class="octicon octicon-link"></span></a>Example Requests</h3> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Resource</th> 
+   <th align="left"></th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">Find By xxxxxx</td> 
+   <td align="left">//v1/xxxxxx</td> 
+  </tr> 
+  <tr> 
+   <td align="left">Find By xxxxxx</td> 
+   <td align="left">//v1/xxxxxxxx</td> 
+  </tr> 
+ </tbody> 
+</table>
+<p><a name="Verbs"></a></p> 
+<h3> <a name="supported-verbs" class="anchor" href="..md.html#supported-verbs"><span class="octicon octicon-link"></span></a>Supported Verbs</h3> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left"></th> 
+   <th align="left">Get</th> 
+   <th align="left">Post</th> 
+   <th align="left">Put</th> 
+   <th align="left">Delete</th> 
+  </tr>
+ </thead> 
+ <tbody>
+  <tr> 
+   <td align="left">All Users</td> 
+   <td align="left">X</td> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr>
+ </tbody> 
+</table>
+<p><a name="Request%20Headers"></a></p> 
+<h3> <a name="request-headers" class="anchor" href="..md.html#request-headers"><span class="octicon octicon-link"></span></a>Request Headers</h3> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Header Name</th> 
+   <th align="left">Example</th> 
+   <th align="left">Description</th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">Authorization</td> 
+   <td align="left">MQEWYHd8Ysq3I1ND03ZzbY</td> 
+   <td align="left">Bearer Token</td> 
+  </tr> 
+  <tr> 
+   <td align="left">key</td> 
+   <td align="left">CvoV0BpqTUsPeVl6BYtoMn</td> 
+   <td align="left">Consumer Key</td> 
+  </tr> 
+ </tbody> 
+</table>
+<p><a name="Response"></a></p> 
+<h3> <a name="response-entities-for-apiname" class="anchor" href="..md.html#response-entities-for-apiname"><span class="octicon octicon-link"></span></a>Response Entities for APIName</h3> 
+<p><a name="Attributes"></a></p> 
+<h4> <a name="apiname-attributes" class="anchor" href="..md.html#apiname-attributes"><span class="octicon octicon-link"></span></a>APIName Attributes</h4> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Attribute Name</th> 
+   <th align="left">Example Value</th> 
+   <th align="left">Cardinality</th> 
+   <th align="left">Description</th> 
+  </tr>
+ </thead> 
+ <tbody>
+  <tr> 
+   <td align="left">name</td> 
+   <td align="left">value</td> 
+   <td align="left">xxxxx</td> 
+   <td align="left">xxxxxxx</td> 
+  </tr>
+ </tbody> 
+</table>
+<p><a name="Response%20Headers"></a></p> 
+<h4> <a name="response-headers" class="anchor" href="..md.html#response-headers"><span class="octicon octicon-link"></span></a>Response Headers</h4> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Header Name</th> 
+   <th align="left">Example</th> 
+   <th align="left">Description</th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+ </tbody> 
+</table>
+<p><a name="Response%20Errors"></a></p> 
+<h4> <a name="response-errors-specific-to-apiname" class="anchor" href="..md.html#response-errors-specific-to-apiname"><span class="octicon octicon-link"></span></a>Response Errors specific to APIName</h4> 
+<ul> 
+ <li>See Global definition</li> 
+</ul>
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Response Code</th> 
+   <th align="left">Reason Phrase</th> 
+   <th align="left">Payload</th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+  <tr> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr> 
+ </tbody> 
+</table>
+<h3> <a name="request-for-apiname-detail" class="anchor" href="..md.html#request-for-apiname-detail"><span class="octicon octicon-link"></span></a>Request for APIName Detail</h3> 
+<p>The Department API is used as an example below....</p> 
+<p><a name="url-template"></a></p> 
+<h3> <a name="uri-template-1" class="anchor" href="..md.html#uri-template-1"><span class="octicon octicon-link"></span></a>URI (Template)</h3> 
+<pre><code>/v1/departments/{department_id}
+</code></pre> 
+<p><a name="request-parameters"></a></p> 
+<h3> <a name="request-parameters" class="anchor" href="..md.html#request-parameters"><span class="octicon octicon-link"></span></a>Request Parameters</h3> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Parameter Name</th> 
+   <th align="left">Description</th> 
+   <th align="left">Example Values</th> 
+   <th align="left">Usage</th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">expand</td> 
+   <td align="left">Expands products within the department.</td> 
+   <td align="left">products</td> 
+   <td align="left">Constant (See Expands)</td> 
+  </tr> 
+  <tr> 
+   <td align="left">position</td> 
+   <td align="left">Pseudo pagination for products associated to a department.</td> 
+   <td align="left">10</td> 
+   <td align="left">Numeric Value</td> 
+  </tr> 
+ </tbody> 
+</table>
+<p><a name="example-requests"></a></p> 
+<h3> <a name="example-requests-1" class="anchor" href="..md.html#example-requests-1"><span class="octicon octicon-link"></span></a>Example Requests</h3> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Resource</th> 
+   <th align="left">Template</th> 
+   <th align="left">Example</th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">Find Department By Id</td> 
+   <td align="left">/v1/departments/{department_id}</td> 
+   <td align="left"><a href="http://api.llbean.com/v1/departments/607">http://api.llbean.com/v1/departments/607</a></td> 
+  </tr> 
+  <tr> 
+   <td align="left">Find Department By Id expanding products</td> 
+   <td align="left">/v1/departments/{department_id}?expand={entity}</td> 
+   <td align="left"><a href="http://api.llbean.com/v1/departments/607?expand=products">http://api.llbean.com/v1/departments/607?expand=products</a></td> 
+  </tr> 
+ </tbody> 
+</table>
+<p><a name="supported-verbs"></a></p> 
+<h3> <a name="supported-verbs-1" class="anchor" href="..md.html#supported-verbs-1"><span class="octicon octicon-link"></span></a>Supported Verbs</h3> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left"></th> 
+   <th align="left">Get</th> 
+   <th align="left">Post</th> 
+   <th align="left">Put</th> 
+   <th align="left">Delete</th> 
+  </tr>
+ </thead> 
+ <tbody>
+  <tr> 
+   <td align="left">All Users</td> 
+   <td align="left">X</td> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+   <td align="left"></td> 
+  </tr>
+ </tbody> 
+</table>
+<p><a name="request-headers"></a></p> 
+<h3> <a name="request-headers-1" class="anchor" href="..md.html#request-headers-1"><span class="octicon octicon-link"></span></a>Request Headers</h3> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Header Name</th> 
+   <th align="left">Example</th> 
+   <th align="left">Description</th> 
+  </tr>
+ </thead> 
+ <tbody>
+  <tr> 
+   <td align="left">key</td> 
+   <td align="left">CvoV0BpqTUsPeVl6BYtoMn</td> 
+   <td align="left">Consumer Key</td> 
+  </tr>
+ </tbody> 
+</table>
+<p><a name="response-headers"></a></p> 
+<h3> <a name="response-headers-1" class="anchor" href="..md.html#response-headers-1"><span class="octicon octicon-link"></span></a>Response Headers</h3> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Header Name</th> 
+   <th align="left">Example</th> 
+   <th align="left">Description</th> 
+  </tr>
+ </thead> 
+ <tbody></tbody> 
+</table>
+<p><a name="response-entities"></a></p> 
+<h3> <a name="response-entities" class="anchor" href="..md.html#response-entities"><span class="octicon octicon-link"></span></a>Response Entities</h3> 
+<p><a name="Attributes"></a></p> 
+<h4> <a name="department-attributes" class="anchor" href="..md.html#department-attributes"><span class="octicon octicon-link"></span></a>Department Attributes</h4> 
+<table> 
+ <thead>
+  <tr> 
+   <th align="left">Attribute Name</th> 
+   <th align="left">Example Value</th> 
+   <th align="left">Occurance</th> 
+   <th align="left">Description</th> 
+  </tr>
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td align="left">id</td> 
+   <td align="left">27</td> 
+   <td align="left">Always 1</td> 
+   <td align="left">numeric, Department ID</td> 
+  </tr> 
+  <tr> 
+   <td align="left">name</td> 
+   <td align="left">Women's</td> 
+   <td align="left">Always 1</td> 
+   <td align="left">Department name</td> 
+  </tr> 
+  <tr> 
+   <td align="left">count</td> 
+   <td align="left">1070</td> 
+   <td align="left">Always 1</td> 
+   <td align="left">Number of products in the department</td> 
+  </tr> 
+  <tr> 
+   <td align="left">level</td> 
+   <td align="left">0</td> 
+   <td align="left">Always 1</td> 
+   <td align="left">The level of this department within the hierarchy. 0 thourgh 2.</td> 
+  </tr> 
+  <tr> 
+   <td align="left">dept</td> 
+   <td align="left"></td> 
+   <td align="left">Optional</td> 
+   <td align="left">The child department information. Supports 3 levels (0 highest-2 lowest providing product list)</td> 
+  </tr> 
+  <tr> 
+   <td align="left">products</td> 
+   <td align="left"></td> 
+   <td align="left">Optional</td> 
+   <td align="left">The associated products</td> 
+  </tr> 
+ </tbody> 
+</table>
+</body>
+</html>
