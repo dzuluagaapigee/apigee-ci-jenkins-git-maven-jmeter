@@ -9,6 +9,3 @@ sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian binary/ > /etc/apt/sources
 sudo apt-get update
 sudo apt-get install -y jenkins
 sudo apt-get install -y git
-
-# starting Jankins
-sudo /etc/init.d/jenkins start
