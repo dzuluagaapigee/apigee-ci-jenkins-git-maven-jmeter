@@ -15,7 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.define "master" do |master|
     master.vm.box = "master"
-    master.vm.provision :shell, :path => "bootstrap-master.sh"
+    # master.vm.provision :shell, :path => "bootstrap-master.sh"
     # master.vm.network :forwarded_port, host: 4567, guest: 80
     # Forward jmeter's command port for shutdown.
     master.vm.network :forwarded_port, guest: 8080, host: 8088
@@ -23,7 +23,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     master.vm.network :forwarded_port, guest: 9098, host: 9098
     master.vm.network :forwarded_port, guest: 4445, host: 4445
   end
-
 end
 
 
