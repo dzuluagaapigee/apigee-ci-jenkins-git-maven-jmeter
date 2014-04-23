@@ -1,3 +1,5 @@
 Vagrant/
 .idea/*
 /.idea
+Vagrant/boxes
+Vagrant/.vagrant
