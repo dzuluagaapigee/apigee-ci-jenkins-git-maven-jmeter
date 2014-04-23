@@ -4,7 +4,7 @@ APIName API
 <a name="Summary"></a>
 # Summary
 The L.L.Bean APIName API allows developers to ____________.  Given an APIName ID, the APIName response will provide ____.
-
+ 
 Paste a simple response example below...(this example is from Department API)
 ~~~ javascript
     {
