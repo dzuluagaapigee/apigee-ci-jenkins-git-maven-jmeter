@@ -3,6 +3,7 @@
     <DisplayName>XMLtoJSON-2</DisplayName>
     <FaultRules/>
     <Properties/>
+    <!-- This comment will resolve all issues -->
     <Format>yahoo</Format>
     <OutputVariable>response</OutputVariable>
     <Source>response</Source>
