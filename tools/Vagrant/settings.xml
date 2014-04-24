@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<!-- 
+	Uncommenting this mirrors section will force all maven 
+	artifacts to be resolved through repo.apigee.com
+
+  <mirrors>
+    <mirror>
+      <mirrorOf>*</mirrorOf>
+      <name>repo</name>
+      <url>http://repo.apigee.com:8081/artifactory/repo</url>
+      <id>repo</id>
+    </mirror>
+  </mirrors>
+-->
+<profiles>
+	<profile>
+		<repositories>
+			<repository>
+				<snapshots>
+					<enabled>false</enabled>
+
+				</snapshots>
+				<id>apigee-cs-libs-release</id>
+				<name>libs-release</name>
+				<url>http://repo.apigee.com:8081/artifactory/repo</url>
+			</repository>
+		</repositories>
+		<pluginRepositories>
+
+			<pluginRepository>
+				<snapshots>
+					<enabled>false</enabled>
+				</snapshots>
+				<id>apigee-cs-plugins-release</id>
+				<name>plugins-release</name>
+				<url>http://repo.apigee.com:8081/artifactory/repo</url>
+
+			</pluginRepository>
+		</pluginRepositories>
+		<id>apigee-artifactory</id>
+	</profile>
+    <profile>
+      	<id>testmyapi-test</id><!-- Replace profile in child pom.xml e.g. testmyapi.xml check apiproxies/weather-api/pom.xml -->
+	    <properties>
+	      <username>dummy@emailaddress.com</username> <!-- Apigee Gateway Credentials to deploy API Bundle-->
+	      <password>PASSWORD_HERE</password> <!-- Replace password -->
+	    </properties>       
+    </profile>
+</profiles>
+<servers>
+	<server>
+		<id>apigee-cs-libs-release</id>
+		<username>client</username> <!-- Replace with credentials to access Apigee Artifactory. Check with Apigee Principal Architect -->
+		<password>PASSWORD_HERE</password>  <!-- Replace with credentials to access Apigee Artifactory. Check with Apigee Principal Architect -->
+	</server>
+	<server>
+		<id>apigee-cs-plugins-release</id>
+		<username>client</username> <!-- Same credentials as above. apigee-cs-libs-release -->
+		<password>PASSWORD_HERE</password>  
+
+
+	</server>
+</servers>
+
+
+<activeProfiles>
+	<activeProfile>apigee-artifactory</activeProfile>
+</activeProfiles>
+<pluginGroups>
+	<pluginGroup>com.apigee.cs</pluginGroup>
+	<pluginGroup>com.apigee.build-tools.enterprise4g</pluginGroup>		
+</pluginGroups>
+
+</settings>
+

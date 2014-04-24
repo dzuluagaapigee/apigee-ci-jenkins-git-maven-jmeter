@@ -106,8 +106,8 @@
 		                        	<suppressJMeterOutput>false</suppressJMeterOutput>
 					                    <propertiesUser> 
 					                        <testData>weather_dev.csv</testData>
-					                        <threadNum>12</threadNum>
-					                        <rampUpPeriodSecs>12</rampUpPeriodSecs>
+					                        <threadNum>5</threadNum>
+					                        <rampUpPeriodSecs>5</rampUpPeriodSecs>
 					                        <loopCount>2</loopCount>
 					                    </propertiesUser> 
 								</configuration>
