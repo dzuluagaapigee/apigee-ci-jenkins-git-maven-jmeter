@@ -1,5 +1,5 @@
 Vagrant/
 .idea/*
 /.idea
-Vagrant/boxes
-Vagrant/.vagrant
+tools/Vagrant/boxes
+tools/Vagrant/.vagrant
