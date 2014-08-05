@@ -7,3 +7,4 @@ java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin jir
 java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin ghprb -deploy
 java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin email-ext -deploy
 java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin nodejs -deploy
+java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin mask-passwords -deploy
