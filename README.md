@@ -14,8 +14,9 @@
   - [Setup Build Trigger](#setup-build-trigger)
 - [Notifications](#notifications)
 - [Jenkins CLI](#jenkins-cli)
-- [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin-)
+- [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin)
 - [Jenkins on EC2](#jenkins-on-ec2)
+- [Jenkins Pull Request Plugin Setup](#jenkins-pull-request-plugin-setup)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -131,6 +132,6 @@ Jenkins on EC2
 ========
 Bitnami Jenkins is a pre-configured, ready to run image for running Jenkins on Amazon EC2.  [Amazon EC2 Bitnami](https://aws.amazon.com/marketplace/pp/B008AT8BYK).
 
-Jenkins Pull Request Setup
+Jenkins Pull Request Plugin Setup
 =====
 [This plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin) is useful to trigger the execution of a Job when a pull request is created. WIP
