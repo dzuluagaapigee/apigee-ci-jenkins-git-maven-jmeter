@@ -4,6 +4,7 @@
 
 - [Enable Continuous Integration on Apigee Edge](#enable-continuous-integration-on-apigee-edge)
 - [Install Jenkins Vagrant Box](#install-jenkins-vagrant-box)
+      - [Optional - Jenkins on Cloudbees](#optional---jenkins-on-cloudbees)
 - [Install Jenkins Plugins](#install-jenkins-plugins)
       - [Install Plugins with install-jenkins-plugins.sh](#install-plugins-with-install-jenkins-pluginssh)
       - [Hide passwords and sensitive data](#hide-passwords-and-sensitive-data)
@@ -13,7 +14,8 @@
   - [Setup Build Trigger](#setup-build-trigger)
 - [Notifications](#notifications)
 - [Jenkins CLI](#jenkins-cli)
-- [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin)
+- [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin-)
+- [Jenkins on EC2](#jenkins-on-ec2)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -24,6 +26,9 @@ The purpose of this repo is to provide a step-by-step guide to enable Apigee Edg
 Install Jenkins Vagrant Box
 ======
 run ```vagrant up``` to download and install vagrant box. This box will also execute bootstrap.sh, which contains the command to install git, JRE, JDK and Jenkins. 
+
+#### Optional - Jenkins on Cloudbees
+An alternative to install Jenkins on a Virtual Machine is to leverage services from a cloud provider such as [Cloudbees](http://www.cloudbees.com/). You can signup for free for 200 build minutes. This environment has been tested successfuly so far.
 
 Install Jenkins Plugins
 ======
@@ -121,3 +126,7 @@ grunt --env=test --debug --username=${ae_username} --password=${ae_password}
 ```
 
 For additional directions on enabling a job with Node.js, see this section [here](https://wiki.jenkins-ci.org/display/JENKINS/NodeJS+Plugin#NodeJSPlugin-Usage).
+
+Jenkins on EC2
+========
+Bitnami Jenkins is a pre-configured, ready to run image for running Jenkins on Amazon EC2.  [Amazon EC2 Bitnami](https://aws.amazon.com/marketplace/pp/B008AT8BYK).
