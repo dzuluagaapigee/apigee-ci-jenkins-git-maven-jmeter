@@ -6,3 +6,4 @@ java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin git
 java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin jira -deploy
 java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin ghprb -deploy
 java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin email-ext -deploy
+java -jar ./jenkins/jenkins-cli.jar -s http://localhost:8080/ install-plugin nodejs -deploy

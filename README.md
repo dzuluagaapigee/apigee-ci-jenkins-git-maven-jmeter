@@ -4,7 +4,7 @@ run ```vagrant up``` to download and install vagrant box. This box will also exe
 
 Install Jenkins Plugins
 ======
-after running ```vagrant ssh``` install Jenkins plugins. 
+after running ```vagrant ssh``` install Jenkins plugins by running install-jenkins-plugins.sh. This script leverages jenkins-cli, which leverages Jenkins API to install Jenkins plugins from Jenkins dependency management. Plugins include: performance, github, github oauth, jira, email extension, and node.js.
 ```
 cd /vagrant
 ./install-jenkins-plugins.sh
@@ -37,16 +37,22 @@ Go back to Job and click "Build Now"
 
 ## Check build history
 
-## Setup email
+## Test Analysis
+### Analize JMeter Log files (JTL)
+
+##Notifications
+
+### Setup email
 
 Setup email from Manage Jenkins > Configure System > E-mail Notification
 For a small test, [GMail SMTP settings can be setup](https://www.digitalocean.com/community/tutorials/how-to-use-google-s-smtp-server). Also make sure to create an [App password](https://support.google.com/accounts/answer/185833)
 
-## Edit Job to setup Email Notification
+### Edit Job to setup Email Notification
 
 Email notification leverages [Email-ext Jenkins Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Email-ext+plugin). Edit Job configuration and "Add Post Build Action" (make sure to click advanced and pick the proper trigger e.g. Always, Fail, Success, etc.)
 
-## Analize JMeter Log files (JTL)
+##Review Node.js Plugin
+
 
 WIP
 
