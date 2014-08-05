@@ -19,7 +19,7 @@
 
 Enable Apigee Edge Continuous Integration
 =====
-The purpose of this repo is to provide a step-by-step guide to enable Apigee Edge bundle deployment on Jenkins.
+The purpose of this repo is to provide a step-by-step guide to enable Apigee Edge bundle deployment on Jenkins for Continuous Integration and Deployment.
 
 Install Jenkins Vagrant Box
 ======
