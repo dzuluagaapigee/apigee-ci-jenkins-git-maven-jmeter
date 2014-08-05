@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Install Jenkins Vagrant Box](#install-jenkins-vagrant-box)
+- [Install Jenkins Plugins](#install-jenkins-plugins)
+      - [Install Plugins with install-jenkins-plugins.sh](#install-plugins-with-install-jenkins-pluginssh)
+      - [Hide passwords and sensitive data](#hide-passwords-and-sensitive-data)
+- [Install Maven](#install-maven)
+- [Create a new job](#create-a-new-job)
+  - [Setup Git Repo](#setup-git-repo)
+  - [Setup Build Trigger](#setup-build-trigger)
+- [Notifications](#notifications)
+- [Jenkins CLI](#jenkins-cli)
+- [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
+
 Install Jenkins Vagrant Box
 ======
 run ```vagrant up``` to download and install vagrant box. This box will also execute bootstrap.sh, which contains the command to install git, JRE, JDK and Jenkins. 
@@ -73,3 +93,28 @@ Run ```vagrant ssh``` and ```java -jar ./jenkins/jenkins-cli.jar -s http://local
 
 Node.js Plugin and Grunt API Plugin 
 =======
+#### Install Node.js and Grunt-cli
+Go to Manage Jenkins > Configure System > NodeJS, click on Add NodeJS, pick latest version and include ```grunt-cli@~0.1.13``` under Global npm packages to install.
+
+More info about [NodeJS Plugin for Jenkins Here](https://wiki.jenkins-ci.org/display/JENKINS/NodeJS+Plugin).
+
+#### Create a free-style software project job
+This job will allow execution of grunt-cli throughcommand line. Name this job "forecastweather-grunt-test".
+
+### Point Source Code Management to apigee-deploy-grunt-plugin repo
+Point SCM to this [repo](https://github.com/apigeecs/apigee-deploy-grunt-plugin.git).
+
+### Enable Mask Passwords under Build Environment
+This will leverage the two variables (ae_username and ae_password) created in step above.
+
+### Add build step Execute Shell
+Set shell this step to execute the following commands:
+```
+echo $PATH
+node --version
+grunt --version
+npm install
+grunt --env=test --debug --username=${ae_username} --password=${ae_password}
+```
+
+For additional directions on enabling a job with Node.js, see this section [here](https://wiki.jenkins-ci.org/display/JENKINS/NodeJS+Plugin#NodeJSPlugin-Usage).
