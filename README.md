@@ -13,7 +13,7 @@
   - [Setup Build Trigger](#setup-build-trigger)
 - [Notifications](#notifications)
 - [Jenkins CLI](#jenkins-cli)
-- [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin)
+- [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
