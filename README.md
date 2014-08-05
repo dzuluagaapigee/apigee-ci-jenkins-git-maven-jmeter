@@ -2,6 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
+- [Enable Apigee Edge Continuous Integration](#enable-apigee-edge-continuous-integration)
 - [Install Jenkins Vagrant Box](#install-jenkins-vagrant-box)
 - [Install Jenkins Plugins](#install-jenkins-plugins)
       - [Install Plugins with install-jenkins-plugins.sh](#install-plugins-with-install-jenkins-pluginssh)
@@ -16,7 +17,9 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-
+Enable Apigee Edge Continuous Integration
+=====
+The purpose of this repo is to provide a step-by-step guide to enable Apigee Edge bundle deployment on Jenkins.
 
 Install Jenkins Vagrant Box
 ======
