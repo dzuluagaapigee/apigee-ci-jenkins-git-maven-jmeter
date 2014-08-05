@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
-- [Enable Apigee Edge Continuous Integration](#enable-apigee-edge-continuous-integration)
+- [Enable Continuous Integration on Apigee Edge](#enable-continuous-integration-on-apigee-edge)
 - [Install Jenkins Vagrant Box](#install-jenkins-vagrant-box)
 - [Install Jenkins Plugins](#install-jenkins-plugins)
       - [Install Plugins with install-jenkins-plugins.sh](#install-plugins-with-install-jenkins-pluginssh)
@@ -13,11 +13,11 @@
   - [Setup Build Trigger](#setup-build-trigger)
 - [Notifications](#notifications)
 - [Jenkins CLI](#jenkins-cli)
-- [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin-)
+- [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Enable Apigee Edge Continuous Integration
+Enable Continuous Integration on Apigee Edge
 =====
 The purpose of this repo is to provide a step-by-step guide to enable Apigee Edge bundle deployment on Jenkins for Continuous Integration and Deployment.
 
