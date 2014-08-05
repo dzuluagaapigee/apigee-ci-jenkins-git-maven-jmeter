@@ -130,3 +130,7 @@ For additional directions on enabling a job with Node.js, see this section [here
 Jenkins on EC2
 ========
 Bitnami Jenkins is a pre-configured, ready to run image for running Jenkins on Amazon EC2.  [Amazon EC2 Bitnami](https://aws.amazon.com/marketplace/pp/B008AT8BYK).
+
+Jenkins Pull Request Setup
+=====
+[This plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin) is useful to trigger the execution of a Job when a pull request is created. WIP
