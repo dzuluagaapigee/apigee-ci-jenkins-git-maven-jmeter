@@ -136,7 +136,8 @@ Jenkins Pull Request Plugin Setup
 =====
 [This plugin](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin) is useful to trigger the execution of a Job when a pull request is created. WIP
 
-#Contributing
+Contributing
+======
 If you would like to contribute, simply fork the repository, push your changes to a branch and send a pull request.
 
 Typo fixes, improvements to grammar or readability, it's all welcome.
