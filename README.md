@@ -17,6 +17,7 @@
 - [Node.js Plugin and Grunt API Plugin ](#nodejs-plugin-and-grunt-api-plugin)
 - [Jenkins on EC2](#jenkins-on-ec2)
 - [Jenkins Pull Request Plugin Setup](#jenkins-pull-request-plugin-setup)
+- [Contributing](#contributing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
