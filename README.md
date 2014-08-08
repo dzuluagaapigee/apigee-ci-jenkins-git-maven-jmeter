@@ -3,6 +3,7 @@
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [Enable Continuous Integration on Apigee Edge](#enable-continuous-integration-on-apigee-edge)
+- [Install Virtual Box](#install-virtual-box)
 - [Install Jenkins Vagrant Box](#install-jenkins-vagrant-box)
       - [Optional - Jenkins on Cloudbees](#optional---jenkins-on-cloudbees)
 - [Install Jenkins Plugins](#install-jenkins-plugins)
@@ -24,6 +25,10 @@
 Enable Continuous Integration on Apigee Edge
 =====
 The purpose of this repo is to provide a step-by-step guide to enable Apigee Edge bundle deployment on Jenkins for Continuous Integration and Deployment.
+
+Install Virtual Box
+======
+Download [Virtual Box](https://www.virtualbox.org/wiki/Downloads). **This step is required to run Vagrant.**
 
 Install Jenkins Vagrant Box
 ======
