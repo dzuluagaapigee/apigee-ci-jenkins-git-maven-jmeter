@@ -32,7 +32,7 @@ Download [Virtual Box](https://www.virtualbox.org/wiki/Downloads). **This step i
 
 Install Jenkins Vagrant Box
 ======
-run ```vagrant up``` to download and install vagrant box. This box will also execute bootstrap.sh, which contains the command to install git, JRE, JDK and Jenkins. 
+After you clone the repo, cd into apigee-ci-jenkins-git-maven-jmeter/tools/Vagrant. Run ```vagrant up``` to download and install vagrant box. This box will also execute bootstrap.sh, which contains the command to install git, JRE, JDK and Jenkins. 
 
 #### Optional - Jenkins on Cloudbees
 An alternative to install Jenkins on a Virtual Machine is to leverage services from a cloud provider such as [Cloudbees](http://www.cloudbees.com/). You can signup for free for 200 build minutes. This environment has been tested successfuly so far.
