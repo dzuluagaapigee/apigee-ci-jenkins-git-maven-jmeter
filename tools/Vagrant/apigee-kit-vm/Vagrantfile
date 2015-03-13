@@ -15,6 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.define "acidep" do |apigeecidependencies|
     apigeecidependencies.vm.box = "apigeecidependencies"
+    config.vm.synced_folder "share/", "/vagrant/share"
     # apigeecidependencies.vm.provision :shell, :path => "bootstrap.sh"
     # apigeecidependencies.vm.network :forwarded_port, host: 4567, guest: 80
     # Forward jmeter's command port for shutdown.
