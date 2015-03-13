@@ -5,13 +5,13 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  
+
   config.vm.provision :shell, :path => "bootstrap.sh"
   # This box can be found here:
   # http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box
   # Also: http://www.vagrantbox.es
 
-  config.vm.box_url = "https://s3.amazonaws.com/apigee_dz/apigee-ci-v1.1.box"
+  config.vm.box_url = ["file://apigee-ci-v1.1.box","https://s3.amazonaws.com/apigee_dz/apigee-ci-v1.1.box"]
 
   config.vm.define "master" do |master|
     master.vm.box = "master"
